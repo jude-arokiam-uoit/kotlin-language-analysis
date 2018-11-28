@@ -1,7 +1,7 @@
-# _Your project title_
+# _Kotlin Language Analysis_
 
-- _your name_
-- _your email (uoit.net)_
+- _Jude Arokiam_
+- _jude.arokiam@uoit.net_
 
 ## About the language
 
