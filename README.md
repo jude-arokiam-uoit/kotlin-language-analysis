@@ -104,6 +104,7 @@ fun test() {
 }
 ```
 
+Output:
 ```console
 > new scope
 > this is top level
@@ -143,8 +144,33 @@ val strFile = File("file.txt").readText(Charsets.UTF_8)
 
 ## About open source library
 
-> _Describe at least one contribution by the open source
-community written in the language._
+### Kotson library
+
+_Kotson enables you to parse and write JSON with Google's Gson using a conciser and easier syntax.
+
+Kotson is a set of extension functions, meaning that it adds utility functions and syntactic sugars to Gson in Kotlin. It does not add new features to Gson nor does it creates new types. It is therefore usable on any Gson object, whether created from java or kotlin in source or library._
+
+Please see the official github page for the official github: https://github.com/SalomonBrys/Kotson
+
+### How to setup
+
+Simply add the dependencies in Maven or Gradle.
+
+### Useful features
+
+Many of JSON related tasks require significantly less code compared to both Java and Kotlin. This allows the developer to focus more on what they are trying to do rather than what code they need.
+
+```kotlin
+import com.github.salomonbrys.kotson.*
+
+// java: int greenComp = json .getAsJsonObject()
+//                            .getAsJsonObject("colors")
+//                            .getAsJsonArray("orange")
+//                            .get(1)
+//                            .getAsInt();
+
+val greenComp = json["colors"]["orange"][1].int
+```
 
 # Analysis of the language
 
