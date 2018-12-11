@@ -69,6 +69,7 @@ The compiler can be installed following the instructions from the official Kotli
 
 ```console
 $ kotlinc hello.kt -include-runtime -d hello.jar
+$ java -jar hello.jar
 ```
 
 Manually typing out these commands to run your programs is not that useful for large scale projects. An IDE that utilizes the Kotlin compiler should be used for any kind of serious work. In recent versions of IntelliJ, Kotlin support is natively supported. The compiler is already bundled in with the IDE. Start a new Java project and select the Kotlin SDK. Eclipse is also supported but the Kotlin plugin must first be installed from the marketplace.
@@ -81,9 +82,64 @@ Any projects that utilize the JVM can use the major build tools available:
 
 ## About the standard library
 
-> _Give some examples of the functions and data structures
-> offered by the standard library_.
+The Kotlin standard library provides many useful functions for everyday programming. Jetbrains has categorized them as:
+* Higher order functions
+* Collections and lazy sequences
+* String manipulations
+* Extensions for JDK classes
 
+### run
+
+Use run is a simple way to create new scopes
+
+```kotlin
+fun test() {
+    var str = "this is top level"
+
+    run {
+        val str = "new scope"
+        println(str)
+    }
+    println(str)
+}
+```
+
+```console
+> new scope
+> this is top level
+```
+
+### List, sets and maps
+
+```kotlin
+// this is a list
+val list = listOf(1, 2, 3, 2)
+
+// this is a set
+val uniqueNum = setOf(1, 2, 3)
+
+// this is a map with type : Map<String, String>
+val students = hashMapOf("first name" to "John", "last name" to "Smith")
+```
+
+### Lazy sequence
+
+```kotlin
+val list = listOf(1, 2, 3, 4, 5, 6)
+val result = list.asSequence()
+        .map{ println("In Map"); it * 2 }
+        .filter { println("In Filter");it % 3  == 0 }
+println("Before Average")      // prints right away
+println(result.average())      // result is computed here
+```
+
+### Reading files
+
+All Java libraries are available to use but Kotlin has some simple functions for quick file manipulation. The maximum file size is 2 GB.
+
+```kotlin
+val strFile = File("file.txt").readText(Charsets.UTF_8)
+```
 
 ## About open source library
 
