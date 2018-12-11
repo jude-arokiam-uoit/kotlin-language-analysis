@@ -55,15 +55,35 @@ when (x) {
 
 ## About the tools
 
-> _Describe the compiler or interpreter needed_.
+Kotlin can be used for many purposes such as:
+* Android development
+* Server-side development
+* Web development
+* Native applications
+
+### Android
+Google has made Kotlin an officially supported language and therefore natively supported by their IDE Android studio. To program in Kotlin, simply create a new project and select `enable Kotlin support`.
+
+### Command line compiler
+The compiler can be installed following the instructions from the official Kotlin website. Once installed the files created should end with the extension `.kt`. To manually run files created the following command can be used to create a jar file. The jar file can be run using the usual JVM method. Similar commands can also be run for developing a library and running scripts. A REPL can be used by running the compiler without arguments.
+
+```console
+$ kotlinc hello.kt -include-runtime -d hello.jar
+```
+
+Manually typing out these commands to run your programs is not that useful for large scale projects. An IDE that utilizes the Kotlin compiler should be used for any kind of serious work. In recent versions of IntelliJ, Kotlin support is natively supported. The compiler is already bundled in with the IDE. Start a new Java project and select the Kotlin SDK. Eclipse is also supported but the Kotlin plugin must first be installed from the marketplace.
+
+### Build tools
+Any projects that utilize the JVM can use the major build tools available:
+* Gradle
+* Maven
+* Ant
 
 ## About the standard library
 
 > _Give some examples of the functions and data structures
 > offered by the standard library_.
 
-### Android async
-Kotlin has a much easier way to create async tasks in Android.
 
 ## About open source library
 
