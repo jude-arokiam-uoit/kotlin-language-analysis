@@ -88,9 +88,9 @@ The Kotlin standard library provides many useful functions for everyday programm
 * String manipulations
 * Extensions for JDK classes
 
-### run
+### Run
 
-Use run is a simple way to create new scopes
+Run is a simple way to create new scopes
 
 ```kotlin
 fun test() {
@@ -146,9 +146,9 @@ val strFile = File("file.txt").readText(Charsets.UTF_8)
 
 ### Kotson library
 
-_Kotson enables you to parse and write JSON with Google's Gson using a conciser and easier syntax.
+_Kotson enables you to parse and write JSON with Google's Gson using a conciser and easier syntax._
 
-Kotson is a set of extension functions, meaning that it adds utility functions and syntactic sugars to Gson in Kotlin. It does not add new features to Gson nor does it creates new types. It is therefore usable on any Gson object, whether created from java or kotlin in source or library._
+_Kotson is a set of extension functions, meaning that it adds utility functions and syntactic sugars to Gson in Kotlin. It does not add new features to Gson nor does it creates new types. It is therefore usable on any Gson object, whether created from java or kotlin in source or library._
 
 Please see the official github page for the official github: https://github.com/SalomonBrys/Kotson
 
