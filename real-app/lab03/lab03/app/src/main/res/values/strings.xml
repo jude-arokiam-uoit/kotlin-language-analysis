@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">lab03</string>
+    <string name="greeting_message">你好</string>
+    <string name="btn_about_text">About</string>
+    <string name="btn_login_text">Login</string>
+    <string name="about_message">这是我的电脑功课。如果你不喜欢我的功课就我们不可能是朋友。</string>
+    <string name="btn_finish_text">Finish</string>
+    <string name="username">Username:</string>
+    <string name="password">Password:</string>
+    <string name="hint_username">firstname.lastname</string>
+    <string name="hint_password">100xxxxxx</string>
+    <string name="valid_username">jude.arokiam</string>
+    <string name="valid_password">100572548</string>
+</resources>
