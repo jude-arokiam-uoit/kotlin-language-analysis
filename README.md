@@ -5,7 +5,7 @@
 
 ## About the language
 
-JetBrains started the Kotlin project in 2010 and released the first version in 2016. Kotlin supports both functional and object oriented constructs.
+JetBrains started the Kotlin project in 2010 and released the first version in 2016. Kotlin supports both functional and object oriented constructs. Kotlin has become more popular in the last couple of years due to being an officially supported language for Android development. JetBrains has said that the language took inspiration from Scala and is evident in the functional programming constructs included. That being said, the language is still quiet new and has yet to prove itself as a language that is better than Java or Scala.
 
 ## About the syntax
 
